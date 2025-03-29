@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kosugi", sans-serif;
+}
+
+body {
+  background-color: rgb(232, 238, 238);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input-container {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 20px;
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  padding: 12px;
+  margin-block: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-container input[type="text"] {
+  width: 70%;
+  background-color: gray;
+}
+.input-container input[type="text"]:hover {
+  background-color: rgb(127, 7, 67);
+  color: pink;
+}
+.input-container input[type="button"] {
+  background-color: gray;
+  color: white;
+  font-weight: 700;
+  margin-left: 8px;
+  cursor: pointer;
+  padding: 12px 24px;
+}
+
+.input-container input[type="button"]:hover {
+  background-color: #3da33d;
+}
+
+ul {
+  width: 100%;
+  max-width: 450px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+  border: 0.125px solid gray;
+  margin-block-end: 12px;
+  /*top-bottom left-right*/
+  padding: 6px 12px;
+  background-color: greenyellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.5s;
+}
+
+ul li:hover {
+  background-color: chocolate;
+}
+
+ul li p {
+  flex-grow: 1;
+  padding: 2px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+  background: none;
+  font-weight: 600;
+  padding: 8px;
+  /* border-radius: 5px; */
+}
+
+.editbtn {
+  background-color: #3da33d;
+  /* border-radius: 5px; */
+  color: white;
+}
+
+.deletebtn {
+  background-color: red;
+  /* border-radius: 5px; */
+  color: white;
+}
